@@ -1,0 +1,22 @@
+{
+  "name": "copy-webpack-plugin-bugrepro",
+  "version": "1.0.0",
+  "main": "dist/bin/entry.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node ./node_modules/webpack/bin/webpack.js --mode production",
+    "watch": "node ./node_modules/webpack/bin/webpack.js --mode development --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "systray": "^1.0.5"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^6.2.1",
+    "file-loader": "^6.2.0",
+    "webpack": "^5.3.2",
+    "webpack-cli": "^4.1.0"
+  }
+}
