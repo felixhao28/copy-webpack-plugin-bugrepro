@@ -44,6 +44,9 @@ module.exports = {
     plugins: [
         new CopyPlugin({
             patterns: [{
+                from: 'static',
+                to: path.resolve('dist', 'static')
+            }, {
                 from: path.resolve(__dirname, 'node_modules', 'systray', 'traybin', traybinary),
                 to: path.resolve('dist', 'traybin', traybinary)
             }]
